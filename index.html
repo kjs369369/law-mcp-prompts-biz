@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-dj/OIEFX7H0K5a4f/O55akbqZxf2PoDoRV0IfLBkrCU='; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; connect-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>법령 MCP 실무 프롬프트 40선 — 1인기업·프리랜서·소상공인 편 | AICLab 김진수</title>
-<meta name="description" content="1인기업가·강사·프리랜서·소상공인이 바로 쓰는 법령 조회 프롬프트 40종. 계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁 8개 분야, 실무 사례와 원클릭 복사 지원.">
+<title>법령 MCP 실무 프롬프트 60선 — 사업자·안전관리·산업안전기업 편 | AICLab 김진수</title>
+<meta name="description" content="사업자·안전관리 담당자·산업안전기업이 바로 쓰는 법령 조회 프롬프트 60종. 계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁·안전관리·현장위험·보건·산업안전기업 12개 분야, 실무 사례와 원클릭 복사 지원.">
 <meta name="author" content="AICLab 김진수">
-<meta name="keywords" content="법령 MCP, 프리랜서 계약, 1인기업 세금, 소상공인 법률, 강사 저작권, 전자상거래법, 상가임대차, AI 법령 조회">
+<meta name="keywords" content="법령 MCP, 프리랜서 계약, 1인기업 세금, 소상공인 법률, 강사 저작권, 전자상거래법, 상가임대차, AI 법령 조회, 안전관리자, 위험성평가, 산업안전기업, 산업안전보건법">
 <link rel="canonical" href="https://kjs369369.github.io/law-mcp-prompts-biz/">
 
 <!-- Open Graph / Facebook / KakaoTalk -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kjs369369.github.io/law-mcp-prompts-biz/">
-<meta property="og:title" content="법령 MCP 실무 프롬프트 40선 — 1인기업·프리랜서·소상공인 편">
-<meta property="og:description" content="계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁 8개 분야 40종. AI가 국가법령정보를 직접 조회하게 만들고, 실무 사례와 함께 바로 복사해 씁니다.">
-<meta property="og:image" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png">
-<meta property="og:image:secure_url" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png">
+<meta property="og:title" content="법령 MCP 실무 프롬프트 60선 — 사업자·안전관리·산업안전기업 편">
+<meta property="og:description" content="계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁·안전관리·현장위험·보건·산업안전기업 12개 분야 60종. AI가 국가법령정보를 직접 조회하게 만들고, 실무 사례와 함께 바로 복사해 씁니다.">
+<meta property="og:image" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png?v=60-20261015">
+<meta property="og:image:secure_url" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png?v=60-20261015">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="법령 MCP 실무 프롬프트 40선 — 1인기업·프리랜서·소상공인 편">
+<meta property="og:image:alt" content="법령 MCP 실무 프롬프트 60선 — 사업자·안전관리·산업안전기업 편">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="AICLab 강의자료">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="법령 MCP 실무 프롬프트 40선 — 1인기업·프리랜서·소상공인 편">
-<meta name="twitter:description" content="계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁 8개 분야 40종. 실무 사례와 원클릭 복사 지원.">
-<meta name="twitter:image" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png">
-<meta name="twitter:image:alt" content="법령 MCP 실무 프롬프트 40선 — 1인기업·프리랜서·소상공인 편">
+<meta name="twitter:title" content="법령 MCP 실무 프롬프트 60선 — 사업자·안전관리·산업안전기업 편">
+<meta name="twitter:description" content="계약·세금·창업·저작권·온라인판매·개인정보·매장운영·분쟁·안전관리·현장위험·보건·산업안전기업 12개 분야 60종. 실무 사례와 원클릭 복사 지원.">
+<meta name="twitter:image" content="https://kjs369369.github.io/law-mcp-prompts-biz/og-image.png?v=60-20261015">
+<meta name="twitter:image:alt" content="법령 MCP 실무 프롬프트 60선 — 사업자·안전관리·산업안전기업 편">
 
 <style>
 :root{--ink:#1A1A1A;--paper:#fff;--cream:#F5F0E8;--rule:#E5E5E5;--muted:#8A8A8A;--gold:#C9A961;--box:#FAFAF8}
@@ -35,6 +38,7 @@ body{font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;background:
 .wrap{max-width:900px;margin:0 auto;padding:36px 20px 80px}
 header{border-bottom:3px solid var(--ink);padding-bottom:18px;margin-bottom:6px}
 .kick{font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--gold);margin-bottom:10px}
+h1 span:last-child{word-break:keep-all}
 h1{font-size:clamp(24px,4vw,36px);font-weight:800;letter-spacing:-.5px;line-height:1.2}
 .sub{color:#555;font-size:15px;margin-top:10px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
@@ -85,15 +89,17 @@ footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--rule);color:v
 footer a{color:var(--gold);text-decoration:none;font-weight:700}
 #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-weight:700;padding:12px 22px;border-radius:10px;opacity:0;transition:.25s;z-index:50;font-size:14px}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
 <div class="wrap">
 
 <header>
   <div class="kick">SERIES 2 · 내 사업을 지키는 법</div>
-  <h1>법령 MCP 실무 프롬프트 <span style="color:var(--gold)">40선</span><br><span style="font-size:.62em;font-weight:700;color:#555">1인기업 · 강사 · 프리랜서 · 소상공인 편</span></h1>
-  <p class="sub">법무팀이 없는 사람을 위한 프롬프트 모음입니다. AI가 국가법령정보(법제처)를 직접 조회하게 만든 뒤 쓰십시오.<br>대괄호 <b>[ ]</b> 부분만 본인 상황으로 바꾸면 됩니다.</p>
+  <h1>법령 MCP 실무 프롬프트 <span style="color:var(--gold)">60선</span><br><span style="font-size:.62em;font-weight:700;color:#555">1인기업 · 강사 · 프리랜서 · 소상공인 · 안전관리 · 산업안전기업 편</span></h1>
+  <p class="sub">사업 운영과 산업안전 업무를 위한 프롬프트 모음입니다. AI가 국가법령정보(법제처)를 직접 조회하게 만든 뒤 쓰십시오.<br>대괄호 <b>[ ]</b> 부분만 본인 상황으로 바꾸면 됩니다.</p>
   <div class="chips">
-    <span class="chip">📁 <b>8개 분야 · 40종</b></span>
+    <span class="chip">📁 <b>12개 분야 · 60종</b></span>
     <span class="chip">💡 <b>분야마다 실무 사례</b></span>
     <span class="chip">📋 <b>원클릭 복사</b></span>
     <span class="chip">📖 <b>조회 전용 · 법률자문 아님</b></span>
@@ -111,9 +117,9 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 </div>
 
 <div class="toolbar">
-  <input id="q" type="text" placeholder="🔎 검색 (예: 계약서, 부가세, 환불, 임대차, 알바, 미수금)">
+  <input id="q" type="text" placeholder="🔎 검색 (예: 계약서, 부가세, 환불, 임대차, 알바, 미수금, 위험성평가, 안전관리, MSDS)" aria-label="프롬프트 검색">
   <div class="frow">
-    <button class="fbtn on" data-f="all">전체 40</button>
+    <button class="fbtn on" data-f="all">전체 60</button>
     <button class="fbtn" data-f="contract">① 계약·수주</button>
     <button class="fbtn" data-f="tax">② 세금·4대보험</button>
     <button class="fbtn" data-f="start">③ 창업·인허가</button>
@@ -122,6 +128,10 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
     <button class="fbtn" data-f="privacy">⑥ 개인정보·발송</button>
     <button class="fbtn" data-f="store">⑦ 매장·알바</button>
     <button class="fbtn" data-f="dispute">⑧ 분쟁·회수</button>
+    <button class="fbtn" data-f="safety-system">⑨ 안전관리 체계</button>
+    <button class="fbtn" data-f="site-risk">⑩ 현장 위험관리</button>
+    <button class="fbtn" data-f="health-response">⑪ 보건·사고대응</button>
+    <button class="fbtn" data-f="safety-business">⑫ 산업안전기업 실무</button>
   </div>
 </div>
 
@@ -830,6 +840,315 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 순서로 표를 만들고 각 행에 근거 조문을 표시해 주세요.</pre>
 </div>
 
+<div class="sec" data-s="safety-system"><h2>⑨ 안전관리 체계 — 선임부터 연간 계획까지</h2><span>5종</span></div>
+<div class="case" data-s="safety-system"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 업무를 처음 맡았습니다. 우리 사업장에 필요한 담당자와 서류부터 알고 싶습니다.</div><div class="go">41번으로 선임 대상을 확인하고 → 42번 업무분장 → 43번 연간 계획 → 44·45번 회의체와 이행점검으로 연결하세요.</div></div>
+<div class="p" data-c="safety-system" data-k="선임 자격 안전관리자 보건관리자 안전보건관리담당자 관리감독자">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">41. 안전관리자·안전보건관리담당자 선임 검토</div><div class="desc">직책별 적용 대상·자격·위탁 가능 여부 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 업종 [ ], 상시근로자 수와 산정자료 [ ], 사업장 구분 [ ], 공사금액(해당 시) [ ], 현재 선임 현황 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 안전보건관리체제 관련 조문·별표.
+2) 안전보건관리책임자·관리감독자·안전관리자·보건관리자·안전보건관리담당자를 구분하고, 각 직책의 선임 대상·자격·전담 여부·위탁 가능 범위·신고 절차를 비교해 주세요. 업종·인원 산정이 불명확하면 확정하지 마세요.
+3) 결과물: 직책 / 적용 여부 / 판단에 필요한 추가자료 / 선임·신고 조치 / 근거.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-system" data-k="업무분장 인수인계 책임 권한">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">42. 안전관리 업무분장·인수인계표</div><div class="desc">담당자·사업주·관리감독자의 역할 구분</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 조직도 [ ], 직책별 선임 현황 [ ], 공정 [ ], 기존 업무분장·인수인계자료 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 직책별 업무 관련 규정.
+2) 사업주의 의무와 각 담당자의 보좌·지도·조언·실행 업무를 구분해 주세요. 담당자를 임의로 지정하거나 위탁만으로 사업주 책임이 없어지는 것으로 작성하지 마세요. 누락된 인수인계 문서와 승인권자를 확인할 질문도 만들어 주세요.
+3) 결과물: 업무 / 법정 의무 주체 / 수행 담당(확인 필요 포함) / 승인·협조 / 증빙 / 인수인계 질문.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-system" data-k="연간 계획 일정 교육 점검 주기">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">43. 연간 안전보건 업무 일정표</div><div class="desc">교육·점검·평가·보고 일정을 한곳에</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 대상 연도 [ ], 업종·규모 [ ], 공정·설비 [ ], 최근 실시일 [ ], 기존 계획 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령에서 사업장에 적용되는 교육·점검·평가·보고 규정.
+2) 적용되는 업무부터 선별하고 법정 기한과 자체 운영 권장 주기를 나누어 주세요. 기준일 자료가 없는 일정은 임의 날짜를 만들지 말고 산정 조건을 적으세요. 이사회 보고·승인 대상 여부도 확인해 주세요.
+3) 결과물: 업무 / 적용 조건 / 법정 주기·기산점 / 예정일 또는 산정식 / 담당 / 증빙.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-system" data-k="산업안전보건위원회 노사협의체 도급 협의체 회의록">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">44. 산업안전보건위원회·협의체 운영 준비</div><div class="desc">회의체별 설치 조건과 기록 준비</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 업종·규모 [ ], 도급 관계 [ ], 공사 정보 [ ], 기존 회의체 [ ], 안건 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 산업안전보건위원회·도급 관련 협의체 규정.
+2) 각 회의체의 설치 대상·구성·운영 주기·심의 또는 협의 사항을 구별해 주세요. 서로 대체할 수 있는지는 근거가 있을 때만 판단하세요. 실제 참석·의결 사실을 채우지 않은 회의록 양식과 후속조치표를 작성해 주세요.
+3) 결과물: 회의체 비교표 + 안건서 + 빈 회의록 + 조치 담당·기한·완료 증빙표.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-system" data-k="중대재해처벌법 경영책임자 안전보건관리체계 예산">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">45. 중대재해 예방 의무·이행 증빙 점검</div><div class="desc">경영책임자 보고에 필요한 빈틈 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 사업 종류·규모 [ ], 사업장 현황 [ ], 안전보건 방침·인력·예산 [ ], 이행 증빙 목록 [ ]
+
+1) 다음 근거를 조회해 주세요: 「중대재해 처벌 등에 관한 법률」 및 시행령과 「산업안전보건법」의 관련 규정.
+2) 두 법의 적용 범위와 의무 주체를 각각 확인하고 안전보건관리체계 구축·이행 점검 항목을 정리해 주세요. 서류의 존재와 실제 이행 여부를 구분하고, 자료만으로 면책·준법을 보장하지 마세요.
+3) 결과물: 의무 / 적용 근거 / 제출된 증빙 / 확인된 사실 / 미확인 사항 / 보완 조치 / 경영진 보고사항.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="sec" data-s="site-risk"><h2>⑩ 현장 위험관리 — 작업 전 위험을 찾고 줄이기</h2><span>5종</span></div>
+<div class="case" data-s="site-risk"><div class="ch">이런 상황에 씁니다</div><div class="sit">현장 작업이 바뀌었습니다. 위험성평가와 작업 전 확인사항을 함께 정리해야 합니다.</div><div class="go">46번 위험성평가 초안에서 출발해 → 47번 작업 전 회의 → 해당 작업의 48~50번 점검표를 사용하세요.</div></div>
+<div class="p" data-c="site-risk" data-k="위험성평가 유해위험요인 개선대책">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">46. 위험성평가 초안·개선조치표</div><div class="desc">공정별 위험요인과 조치 이력 정리</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 공정·작업순서 [ ], 설비·물질 [ ], 현장 관찰기록 [ ], 근로자 의견 [ ], 기존 조치 [ ], 평가 방법·기준 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령 및 위험성평가 관련 고시.
+2) 확인된 위험요인과 현장 확인이 필요한 가설을 분리하세요. 제공된 평가 기준만 사용하고 빈도·강도 점수를 임의로 생성하지 마세요. 제거·대체·공학적·관리적 대책·보호구 순서로 검토하고 근로자 참여·공유·기록 요건을 확인하세요.
+3) 결과물: 작업 / 위험요인·근거자료 / 기존 조치 / 평가 또는 미평가 사유 / 추가 대책 / 담당·기한 / 재평가 확인.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="site-risk" data-k="TBM 작업 전 안전점검회의 작업중지">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">47. 작업 전 안전점검회의(TBM) 자료</div><div class="desc">오늘의 작업·위험·중지 기준을 공유</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 오늘 작업 [ ], 참여 직종 [ ], 위험성평가 결과 [ ], 변경사항·날씨 [ ], 비상 연락체계 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 「산업안전보건기준에 관한 규칙」의 해당 작업 안전조치 규정.
+2) 현장 책임자가 검토할 짧은 진행문과 작업자 확인 질문을 만들어 주세요. 위험요인·예방조치·작업중지 및 보고 기준을 포함하고 TBM만으로 법정 교육이 대체된다고 단정하지 마세요.
+3) 결과물: 진행문 / 핵심 위험·대책 / 작업자 확인 질문 / 현장 확인란 / 참여·공유 기록 양식.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="site-risk" data-k="추락 고소작업 개구부 사다리 비계 작업발판">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">48. 추락·개구부·이동식 작업 점검</div><div class="desc">높은 곳 작업의 사전 확인표</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 작업 위치·높이 [ ], 작업발판·비계·사다리 종류 [ ], 개구부 [ ], 방호설비 [ ], 현장 도면·점검기록 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건기준에 관한 규칙」의 추락 방지·작업발판·개구부·해당 설비 규정.
+2) 작업 방식별 적용 규정을 확인하고 수치 기준은 원문·단위·적용 조건을 함께 제시하세요. 사진이나 설명만으로 안전 판정을 내리지 말고 현장 측정·설비 점검이 필요한 항목을 표시하세요.
+3) 결과물: 점검 위치 / 법정 기준 / 현장 확인 방법 / 미확인 정보 / 개선조치 / 작업 전 승인 확인.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="site-risk" data-k="끼임 정비 에너지차단 LOTO 잠금 표지 방호장치">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">49. 기계 정비·에너지 차단 점검</div><div class="desc">끼임 방지를 위한 정비 전 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 설비명·제조사 매뉴얼 [ ], 정비 작업 [ ], 전기·압력 등 에너지원 [ ], 잔류에너지 [ ], 차단장치 현황 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건기준에 관한 규칙」의 정비·청소·수리 시 운전정지 및 위험 방지 규정.
+2) 현장 전문가가 확정할 차단·잠금·표지·잔류에너지 확인·복구 절차의 검토표를 만드세요. 제조사 매뉴얼과 실제 설비 확인이 없는 구체 조작 지시는 만들지 말고, 방호장치 우회나 임의 재가동을 허용하지 마세요.
+3) 결과물: 단계 / 확인해야 할 위험 / 법적 요구 / 매뉴얼 대조사항 / 담당자 확인 / 재가동 승인 조건.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="site-risk" data-k="밀폐공간 질식 산소 유해가스 감시인 구조">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">50. 밀폐공간 작업·구조계획 검토</div><div class="desc">출입 전 측정·감시·비상체계 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 공간 구조·용도 [ ], 작업 내용 [ ], 물질·가스 정보 [ ], 측정기·환기설비 [ ], 감시·연락·구조체계 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건기준에 관한 규칙」의 밀폐공간 작업 관련 정의·별표·예방조치.
+2) 밀폐공간 해당 여부에 필요한 자료부터 확인하고 출입 전 확인표와 비상대응계획 검토표를 만드세요. 측정값이나 적합 판정을 생성하지 마세요. 무장비 진입 구조를 금지하고 비상 시 전문 구조 요청·출입통제 원칙을 포함하세요.
+3) 결과물: 적용 판단 / 측정·환기·감시 확인 / 출입 승인 조건 / 작업중지 기준 / 비상 연락·전문 구조 계획.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="sec" data-s="health-response"><h2>⑪ 보건·사고대응 — 교육·건강·재해 기록 챙기기</h2><span>5종</span></div>
+<div class="case" data-s="health-response"><div class="ch">이런 상황에 씁니다</div><div class="sit">교육 기록과 화학물질 자료를 정리하고, 사고가 났을 때 보고 절차도 준비하려고 합니다.</div><div class="go">51~53번으로 교육·물질·보건 관리를 점검하고 → 54번 비상대응 → 55번 사고 보고·재발방지 서식을 준비하세요.</div></div>
+<div class="p" data-c="health-response" data-k="정기교육 채용시교육 특별교육 관리감독자 교육일지">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">51. 안전보건교육 대상·시간·기록 설계</div><div class="desc">교육 종류별 법정 요건 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 업종·규모 [ ], 직무 [ ], 채용·작업 변경사항 [ ], 유해위험작업 [ ], 기존 교육내역 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 안전보건교육 규정·별표.
+2) 정기·채용 시·작업내용 변경 시·특별교육 및 직무교육 적용 여부를 구별하세요. 교육시간·내용·강사 자격·면제 조건은 해당 기준일 원문으로 확인하고 미실시 교육의 참석·서명·시간을 채우지 마세요.
+3) 결과물: 교육 종류 / 대상 / 시간·내용·근거 / 강사 요건 / 실시 일정 / 빈 교육일지·참석 확인란.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="health-response" data-k="MSDS SDS 화학물질 경고표지 물질안전보건자료">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">52. 물질안전보건자료(MSDS) 관리 점검</div><div class="desc">자료·경고표지·교육의 누락 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 제품 목록 [ ], 제조·수입·공급·사용 중 해당 역할 [ ], 공급받은 MSDS [ ], 용기·보관 현황 [ ], 작업 내용 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령 및 「산업안전보건기준에 관한 규칙」의 화학물질 관련 규정.
+2) 역할별 작성·제출·제공·게시·교육·경고표지 의무를 구분하세요. 제품명만으로 성분·유해성·보호구를 추정하지 말고 공급자 자료를 대조하세요. MSDS를 임의로 새로 작성하거나 인증자료처럼 표현하지 마세요.
+3) 결과물: 제품 / 확보 자료·개정일 / 역할별 의무 / 누락사항 / 공급자 확인 질문 / 개선 담당·기한.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="health-response" data-k="작업환경측정 특수건강진단 유해인자 건강정보">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">53. 작업환경측정·특수건강진단 대상 확인</div><div class="desc">유해인자별 대상·시기·사후관리 연결</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 공정·유해인자 [ ], 노출 작업·시간 [ ], 측정·검진 실시 이력 [ ], 인원(익명 집계) [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 작업환경측정·특수건강진단 규정·별표.
+2) 유해인자별 대상 여부·실시 시기·주기·예외·기록 의무를 확인하세요. 물질·노출 조건이 불명확하면 확인 필요로 남기고 의학적 진단이나 업무적합성 판단을 대신하지 마세요. 개인 검진 결과는 입력받지 않는 운영안을 제시하세요.
+3) 결과물: 유해인자 / 대상 판단 / 법정 시기·주기 / 필요한 추가자료 / 전문기관 확인 / 사후관리·접근 제한.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="health-response" data-k="폭염 온열질환 한파 비상대응 대피 휴식">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">54. 폭염·한파·비상상황 대응계획</div><div class="desc">계절 위험과 작업중지·대피 체계 준비</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 작업 장소·형태 [ ], 실내외 조건 [ ], 관측값·예보와 관측시각 [ ], 근무 형태 [ ], 기존 비상대응체계 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 「산업안전보건기준에 관한 규칙」의 온도·기상 위험 및 급박한 위험 대응 규정.
+2) 법정 조치와 공식 권고를 구분해 예방·모니터링·작업중지·보고·대피 계획을 작성하세요. 온도·휴식 수치의 적용 조건과 출처를 확인하고 관측값을 만들어내지 마세요. 응급상황에서는 AI 답변을 기다리지 않고 현장 비상절차와 119 요청을 따르도록 하세요.
+3) 결과물: 위험상황 / 판단 자료 / 예방조치 / 중지·대피 기준 / 연락·응급대응 / 현장 책임자 확인.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="health-response" data-k="산업재해 조사표 사고보고 재발방지 아차사고">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">55. 산업재해 보고·재발방지 초안</div><div class="desc">사실·추정 분리와 보고기한 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 사고 일시 [ ], 확인된 경위 [ ], 피해 정보(비식별) [ ], 응급조치 [ ], 작업중지 여부 [ ], 확보 증빙 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 산업재해 기록·보고 및 중대재해 발생 시 조치 규정.
+2) 현재 응급상황이면 구조·응급조치·현장 비상연락을 우선 안내하세요. 보고 대상·수신기관·기한·서식을 구별하고 사고 원인을 단정하지 마세요. 사실·진술·추정·추가조사를 분리하고 재해 은폐나 기록 소급작성을 하지 마세요.
+3) 결과물: 즉시 조치 / 보고 의무·기산점 / 사실관계표 / 추가조사 질문 / 재발방지 대책 / 효과 확인.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="sec" data-s="safety-business"><h2>⑫ 산업안전기업 실무 — 제안·계약·점검·납품까지</h2><span>5종</span></div>
+<div class="case" data-s="safety-business"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 컨설팅 의뢰를 받았습니다. 수행 자격과 계약 범위를 확인하고 결과보고서를 준비해야 합니다.</div><div class="go">56번 자격·업무범위 확인 → 57번 제안서 → 58번 계약서 → 59번 결과보고 → 60번 고객사 후속관리 순서로 활용하세요.</div></div>
+<div class="p" data-c="safety-business" data-k="안전관리전문기관 산업안전지도사 지정 등록 자격 컨설팅">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">56. 안전 전문기관·지도사 업무범위 검토</div><div class="desc">지정·등록·인력·장비 요건부터 확인</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 제공하려는 서비스 [ ], 보유 지정·등록·자격증 [ ], 인력·장비 [ ], 고객 업종·규모 [ ], 영업 지역 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령의 전문기관 지정·지도사 등록·위탁 업무 규정.
+2) 일반 자문과 법정 위탁·검사·진단 등 자격이 필요한 업무를 구분하세요. 보유 자료와 필요한 요건을 대조하고 미확인 업무를 수행 가능으로 단정하지 마세요. 지정·등록이 없는 상태에서 사용할 수 없는 표시도 확인하세요.
+3) 결과물: 서비스 / 필요 지정·등록·자격 / 제출 증빙 / 수행 가능 여부 또는 확인 필요 / 보완 절차.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-business" data-k="안전컨설팅 제안서 과업내용서 견적 산출물">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">57. 안전 컨설팅 제안서·과업범위 작성</div><div class="desc">고객 요구를 수행 항목과 산출물로</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 고객 요청 원문 [ ], 사업장·공정 [ ], 요청 일정 [ ], 확인된 수행 자격 [ ], 인력 투입·단가 근거 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령 중 요청 업무에 해당하는 의무·자격 규정.
+2) 고객 원문의 명칭·금액·일정을 그대로 유지하고 법정 업무와 추가 컨설팅을 구분하세요. 근거 없는 단가·방문 횟수·성과보장을 넣지 마세요. 제공된 단가와 투입량이 있으면 계산식·세금 조건·합계를 검산하세요.
+3) 결과물: 요구사항 대조표 / 범위·제외범위 / 수행 방법 / 산출물 / 검수 기준 / 일정 / 근거 있는 견적 또는 미정 항목.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-business" data-k="위탁계약 안전관리 대행 컨설팅 손해배상 검수">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">58. 안전관리 위탁·컨설팅 계약 검토</div><div class="desc">역할·자료제공·검수·책임 경계 정리</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 계약서 원문(비식별) [ ], 법정 위탁 또는 일반 자문 여부 [ ], 지정·등록 현황 [ ], 고객 사업장 정보 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령 및 「민법」의 해당 계약 관련 규정.
+2) 원문을 유지한 대조표로 업무 범위·담당자·방문·보고·개선조치·검수·비밀유지·해지·대금·책임 조항을 검토하세요. 고객의 법정 의무가 계약만으로 전부 이전된다고 쓰지 말고 수정안과 협상사항을 구분하세요.
+3) 결과물: 원문 조항 / 법령상 검토사항 / 운영상 위험 / 수정 제안 / 협상·전문가 확인사항.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-business" data-k="점검보고서 개선요청서 사진 증빙 현장진단">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">59. 현장 점검 결과보고서·개선요청서</div><div class="desc">관찰 증빙을 법적 근거와 연결</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 점검 범위·일시 [ ], 관찰기록·사진 설명 [ ], 현장 측정자료 [ ], 고객 기존 조치 [ ], 검수 조건 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 「산업안전보건기준에 관한 규칙」의 관찰사항별 관련 규정.
+2) 관찰된 사실만 보고서에 쓰고 사진으로 확인 불가능한 부분은 추가 확인으로 표시하세요. 법령 위반 판단에 필요한 조건이 부족하면 단정하지 마세요. 법정 의무와 개선 권고를 구분하고 개선 완료는 재확인 증빙이 있을 때만 표시하세요.
+3) 결과물: 관찰 사실·증빙번호 / 관련 규정·적용 조건 / 위험 / 개선요청 / 담당·기한 협의란 / 재점검 결과란.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+<div class="p" data-c="safety-business" data-k="법령개정 고객사 월간보고 이행관리 후속점검">
+<button class="copy">복사</button>
+<div class="hd"><div class="ttl">60. 고객사 법령 개정 영향·후속관리 보고</div><div class="desc">개정 내용과 실제 조치의 연결</div></div>
+<pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
+입력자료: 고객 업종·규모 [ ], 관리 대상 법령 [ ], 비교 기준일 [ ], 업무 기준일 [ ], 미완료 조치 목록 [ ]
+
+1) 다음 근거를 조회해 주세요: 「산업안전보건법」과 하위법령 및 고객 업무 관련 법령의 신구조문·부칙.
+2) 공포일·시행일·경과조치와 고객별 적용 여부를 확인해 개정 영향을 비교하세요. 과거·현재 원문을 확보하지 못하면 변경 내용을 추정하지 마세요. 자동 모니터링이 실행된 것처럼 쓰지 말고 이번 조회 범위와 미조회 자료를 명시하세요.
+3) 결과물: 개정 전후 근거 / 시행일·경과조치 / 고객 적용 여부 / 필요한 조치 / 담당·기한 / 미완료 추적 / 이번 조회 범위.
+
+공통 확인 원칙: 업무 기준일 [YYYY-MM-DD]에 시행 중인 원문을 먼저 조회하세요.
+법령명·조문·별표·시행일·출처 링크를 표시하고, 공포되었으나 미시행인 개정은 분리하세요.
+법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
+제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
+</div>
+
 <div class="empty" id="empty">🔍 검색 결과가 없습니다. 다른 단어로 찾아보세요.</div>
 
 <div class="notice" style="margin-top:34px">
@@ -837,7 +1156,8 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 ① 이 MCP는 <b>조회(읽기) 전용</b>이며 법률 자문을 대체하지 않습니다. 계약·분쟁·세무처럼 돈과 책임이 걸린 판단은 <b>반드시 변호사·세무사 등 전문가 확인</b>을 거치십시오.<br>
 ② <b>OC는 개인 인증키</b>입니다. 남의 키(강사 키 포함)를 여럿이 공유하면 호출이 몰려 차단될 수 있고, 블로그·깃허브에 공개하면 안 됩니다.<br>
 ③ 개정으로 조문 번호와 금액 기준이 바뀝니다. 특히 <b>세율·보증금 한도·인상률·소액사건 금액</b>은 변동이 잦습니다. <b>최종 판단 전 원문 대조 1회.</b> AI는 초안, 책임은 사람입니다.<br>
-④ 계약서를 붙여넣을 때는 <b>상대방 실명·연락처 등 개인정보를 지우고</b> 넣으십시오.
+④ 산업안전 프롬프트는 현장점검·전문가 판단을 위한 초안입니다. <b>AI 답변만으로 작업을 승인하지 마세요.</b> 급박한 위험은 현장 비상절차에 따라 작업중지·대피·구조 요청을 우선하세요.<br>
+⑤ 계약서를 붙여넣을 때는 <b>상대방 실명·연락처 등 개인정보를 지우고</b> 넣으십시오.
 </div>
 
 <footer>
@@ -850,16 +1170,16 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 </footer>
 </div>
 
-<div id="toast">✓ 복사되었습니다</div>
+<div id="toast" role="status" aria-live="polite">✓ 복사되었습니다</div>
 
 <script>
-function toast(){const t=document.getElementById('toast');t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1300);}
+function toast(message='✓ 복사되었습니다'){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1300);}
 document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
   const txt=b.parentElement.querySelector('pre').innerText;
   const done=()=>{b.textContent='✓ 복사됨';b.classList.add('done');toast();setTimeout(()=>{b.textContent='복사';b.classList.remove('done');},1400);};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(()=>fb(txt,done));}else{fb(txt,done);}
 }));
-function fb(t,cb){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(a);cb&&cb();}
+function fb(t,cb){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();let copied=false;try{copied=document.execCommand('copy');}catch(e){copied=false;}finally{a.remove();}if(copied){cb&&cb();}else{toast('복사하지 못했습니다. 본문을 선택해 직접 복사해 주세요.');}}
 const cards=[...document.querySelectorAll('.p')],secs=[...document.querySelectorAll('.sec')],cases=[...document.querySelectorAll('.case')];
 let f='all';
 function apply(){
