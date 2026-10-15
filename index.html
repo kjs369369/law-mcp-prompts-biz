@@ -89,6 +89,21 @@ footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--rule);color:v
 footer a{color:var(--gold);text-decoration:none;font-weight:700}
 #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-weight:700;padding:12px 22px;border-radius:10px;opacity:0;transition:.25s;z-index:50;font-size:14px}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* 안전 분야: 제목, 필터, 섹션에 같은 강조색을 사용합니다. */
+.safety-title{display:block;margin-top:18px;padding:16px 20px;border-left:6px solid var(--gold);background:#124E47;color:#fff;font-size:clamp(22px,3.4vw,30px);font-weight:800;line-height:1.45;letter-spacing:-.4px;border-radius:0 8px 8px 0}
+.safety-caption{margin-top:9px;color:#124E47;font-size:14px;word-break:keep-all}
+.safety-caption b{border-bottom:2px solid var(--gold);padding-bottom:2px}
+.safety-filters{flex-wrap:wrap;overflow:visible;border-top:2px solid #B9D7D0;padding-top:10px;gap:7px}
+.safety-filters .fbtn{background:#EDF6F3;border-color:#9ABFB5;color:#124E47}
+.safety-filters .fbtn.on{background:#124E47;border-color:#124E47;color:#fff}
+.sec.safety{border-bottom:3px solid #124E47;padding:12px 0;flex-wrap:wrap}
+.sec.safety h2{color:#124E47}
+.case.safety{background:#EDF6F3;border-left:4px solid #124E47}
+.case.safety .ch{color:#124E47}
+.p.safety{border-left-color:#124E47}
+@media(max-width:420px){.safety-title{padding:13px 14px}.safety-filters .fbtn{font-size:12px;padding:7px 10px}.sec.safety h2{font-size:18px}}
+
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
@@ -96,7 +111,8 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 
 <header>
   <div class="kick">SERIES 2 · 내 사업을 지키는 법</div>
-  <h1>법령 MCP 실무 프롬프트 <span style="color:var(--gold)">60선</span><br><span style="font-size:.62em;font-weight:700;color:#555">1인기업 · 강사 · 프리랜서 · 소상공인 · 안전관리 · 산업안전기업 편</span></h1>
+  <h1>법령 MCP 실무 프롬프트 <span style="color:var(--gold)">60선</span><br><span style="font-size:.62em;font-weight:700;color:#555">1인기업 · 강사 · 프리랜서 · 소상공인</span><span class="safety-title">안전관리 · 산업안전기업 편</span></h1>
+  <p class="safety-caption">현장에서 바로 쓰는 안전 업무 프롬프트 <b>20종 추가</b></p>
   <p class="sub">사업 운영과 산업안전 업무를 위한 프롬프트 모음입니다. AI가 국가법령정보(법제처)를 직접 조회하게 만든 뒤 쓰십시오.<br>대괄호 <b>[ ]</b> 부분만 본인 상황으로 바꾸면 됩니다.</p>
   <div class="chips">
     <span class="chip">📁 <b>12개 분야 · 60종</b></span>
@@ -128,6 +144,8 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
     <button class="fbtn" data-f="privacy">⑥ 개인정보·발송</button>
     <button class="fbtn" data-f="store">⑦ 매장·알바</button>
     <button class="fbtn" data-f="dispute">⑧ 분쟁·회수</button>
+  </div>
+  <div class="frow safety-filters" aria-label="안전관리 및 산업안전기업 분야">
     <button class="fbtn" data-f="safety-system">⑨ 안전관리 체계</button>
     <button class="fbtn" data-f="site-risk">⑩ 현장 위험관리</button>
     <button class="fbtn" data-f="health-response">⑪ 보건·사고대응</button>
@@ -840,9 +858,9 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 순서로 표를 만들고 각 행에 근거 조문을 표시해 주세요.</pre>
 </div>
 
-<div class="sec" data-s="safety-system"><h2>⑨ 안전관리 체계 — 선임부터 연간 계획까지</h2><span>5종</span></div>
-<div class="case" data-s="safety-system"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 업무를 처음 맡았습니다. 우리 사업장에 필요한 담당자와 서류부터 알고 싶습니다.</div><div class="go">41번으로 선임 대상을 확인하고 → 42번 업무분장 → 43번 연간 계획 → 44·45번 회의체와 이행점검으로 연결하세요.</div></div>
-<div class="p" data-c="safety-system" data-k="선임 자격 안전관리자 보건관리자 안전보건관리담당자 관리감독자">
+<div class="sec safety" data-s="safety-system"><h2>⑨ 안전관리 체계 — 선임부터 연간 계획까지</h2><span>5종</span></div>
+<div class="case safety" data-s="safety-system"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 업무를 처음 맡았습니다. 우리 사업장에 필요한 담당자와 서류부터 알고 싶습니다.</div><div class="go">41번으로 선임 대상을 확인하고 → 42번 업무분장 → 43번 연간 계획 → 44·45번 회의체와 이행점검으로 연결하세요.</div></div>
+<div class="p safety" data-c="safety-system" data-k="선임 자격 안전관리자 보건관리자 안전보건관리담당자 관리감독자">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">41. 안전관리자·안전보건관리담당자 선임 검토</div><div class="desc">직책별 적용 대상·자격·위탁 가능 여부 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -857,7 +875,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-system" data-k="업무분장 인수인계 책임 권한">
+<div class="p safety" data-c="safety-system" data-k="업무분장 인수인계 책임 권한">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">42. 안전관리 업무분장·인수인계표</div><div class="desc">담당자·사업주·관리감독자의 역할 구분</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -872,7 +890,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-system" data-k="연간 계획 일정 교육 점검 주기">
+<div class="p safety" data-c="safety-system" data-k="연간 계획 일정 교육 점검 주기">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">43. 연간 안전보건 업무 일정표</div><div class="desc">교육·점검·평가·보고 일정을 한곳에</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -887,7 +905,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-system" data-k="산업안전보건위원회 노사협의체 도급 협의체 회의록">
+<div class="p safety" data-c="safety-system" data-k="산업안전보건위원회 노사협의체 도급 협의체 회의록">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">44. 산업안전보건위원회·협의체 운영 준비</div><div class="desc">회의체별 설치 조건과 기록 준비</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -902,7 +920,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-system" data-k="중대재해처벌법 경영책임자 안전보건관리체계 예산">
+<div class="p safety" data-c="safety-system" data-k="중대재해처벌법 경영책임자 안전보건관리체계 예산">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">45. 중대재해 예방 의무·이행 증빙 점검</div><div class="desc">경영책임자 보고에 필요한 빈틈 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -917,9 +935,9 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="sec" data-s="site-risk"><h2>⑩ 현장 위험관리 — 작업 전 위험을 찾고 줄이기</h2><span>5종</span></div>
-<div class="case" data-s="site-risk"><div class="ch">이런 상황에 씁니다</div><div class="sit">현장 작업이 바뀌었습니다. 위험성평가와 작업 전 확인사항을 함께 정리해야 합니다.</div><div class="go">46번 위험성평가 초안에서 출발해 → 47번 작업 전 회의 → 해당 작업의 48~50번 점검표를 사용하세요.</div></div>
-<div class="p" data-c="site-risk" data-k="위험성평가 유해위험요인 개선대책">
+<div class="sec safety" data-s="site-risk"><h2>⑩ 현장 위험관리 — 작업 전 위험을 찾고 줄이기</h2><span>5종</span></div>
+<div class="case safety" data-s="site-risk"><div class="ch">이런 상황에 씁니다</div><div class="sit">현장 작업이 바뀌었습니다. 위험성평가와 작업 전 확인사항을 함께 정리해야 합니다.</div><div class="go">46번 위험성평가 초안에서 출발해 → 47번 작업 전 회의 → 해당 작업의 48~50번 점검표를 사용하세요.</div></div>
+<div class="p safety" data-c="site-risk" data-k="위험성평가 유해위험요인 개선대책">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">46. 위험성평가 초안·개선조치표</div><div class="desc">공정별 위험요인과 조치 이력 정리</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -934,7 +952,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="site-risk" data-k="TBM 작업 전 안전점검회의 작업중지">
+<div class="p safety" data-c="site-risk" data-k="TBM 작업 전 안전점검회의 작업중지">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">47. 작업 전 안전점검회의(TBM) 자료</div><div class="desc">오늘의 작업·위험·중지 기준을 공유</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -949,7 +967,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="site-risk" data-k="추락 고소작업 개구부 사다리 비계 작업발판">
+<div class="p safety" data-c="site-risk" data-k="추락 고소작업 개구부 사다리 비계 작업발판">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">48. 추락·개구부·이동식 작업 점검</div><div class="desc">높은 곳 작업의 사전 확인표</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -964,7 +982,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="site-risk" data-k="끼임 정비 에너지차단 LOTO 잠금 표지 방호장치">
+<div class="p safety" data-c="site-risk" data-k="끼임 정비 에너지차단 LOTO 잠금 표지 방호장치">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">49. 기계 정비·에너지 차단 점검</div><div class="desc">끼임 방지를 위한 정비 전 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -979,7 +997,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="site-risk" data-k="밀폐공간 질식 산소 유해가스 감시인 구조">
+<div class="p safety" data-c="site-risk" data-k="밀폐공간 질식 산소 유해가스 감시인 구조">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">50. 밀폐공간 작업·구조계획 검토</div><div class="desc">출입 전 측정·감시·비상체계 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -994,9 +1012,9 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="sec" data-s="health-response"><h2>⑪ 보건·사고대응 — 교육·건강·재해 기록 챙기기</h2><span>5종</span></div>
-<div class="case" data-s="health-response"><div class="ch">이런 상황에 씁니다</div><div class="sit">교육 기록과 화학물질 자료를 정리하고, 사고가 났을 때 보고 절차도 준비하려고 합니다.</div><div class="go">51~53번으로 교육·물질·보건 관리를 점검하고 → 54번 비상대응 → 55번 사고 보고·재발방지 서식을 준비하세요.</div></div>
-<div class="p" data-c="health-response" data-k="정기교육 채용시교육 특별교육 관리감독자 교육일지">
+<div class="sec safety" data-s="health-response"><h2>⑪ 보건·사고대응 — 교육·건강·재해 기록 챙기기</h2><span>5종</span></div>
+<div class="case safety" data-s="health-response"><div class="ch">이런 상황에 씁니다</div><div class="sit">교육 기록과 화학물질 자료를 정리하고, 사고가 났을 때 보고 절차도 준비하려고 합니다.</div><div class="go">51~53번으로 교육·물질·보건 관리를 점검하고 → 54번 비상대응 → 55번 사고 보고·재발방지 서식을 준비하세요.</div></div>
+<div class="p safety" data-c="health-response" data-k="정기교육 채용시교육 특별교육 관리감독자 교육일지">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">51. 안전보건교육 대상·시간·기록 설계</div><div class="desc">교육 종류별 법정 요건 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1011,7 +1029,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="health-response" data-k="MSDS SDS 화학물질 경고표지 물질안전보건자료">
+<div class="p safety" data-c="health-response" data-k="MSDS SDS 화학물질 경고표지 물질안전보건자료">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">52. 물질안전보건자료(MSDS) 관리 점검</div><div class="desc">자료·경고표지·교육의 누락 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1026,7 +1044,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="health-response" data-k="작업환경측정 특수건강진단 유해인자 건강정보">
+<div class="p safety" data-c="health-response" data-k="작업환경측정 특수건강진단 유해인자 건강정보">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">53. 작업환경측정·특수건강진단 대상 확인</div><div class="desc">유해인자별 대상·시기·사후관리 연결</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1041,7 +1059,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="health-response" data-k="폭염 온열질환 한파 비상대응 대피 휴식">
+<div class="p safety" data-c="health-response" data-k="폭염 온열질환 한파 비상대응 대피 휴식">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">54. 폭염·한파·비상상황 대응계획</div><div class="desc">계절 위험과 작업중지·대피 체계 준비</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1056,7 +1074,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="health-response" data-k="산업재해 조사표 사고보고 재발방지 아차사고">
+<div class="p safety" data-c="health-response" data-k="산업재해 조사표 사고보고 재발방지 아차사고">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">55. 산업재해 보고·재발방지 초안</div><div class="desc">사실·추정 분리와 보고기한 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1071,9 +1089,9 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="sec" data-s="safety-business"><h2>⑫ 산업안전기업 실무 — 제안·계약·점검·납품까지</h2><span>5종</span></div>
-<div class="case" data-s="safety-business"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 컨설팅 의뢰를 받았습니다. 수행 자격과 계약 범위를 확인하고 결과보고서를 준비해야 합니다.</div><div class="go">56번 자격·업무범위 확인 → 57번 제안서 → 58번 계약서 → 59번 결과보고 → 60번 고객사 후속관리 순서로 활용하세요.</div></div>
-<div class="p" data-c="safety-business" data-k="안전관리전문기관 산업안전지도사 지정 등록 자격 컨설팅">
+<div class="sec safety" data-s="safety-business"><h2>⑫ 산업안전기업 실무 — 제안·계약·점검·납품까지</h2><span>5종</span></div>
+<div class="case safety" data-s="safety-business"><div class="ch">이런 상황에 씁니다</div><div class="sit">안전 컨설팅 의뢰를 받았습니다. 수행 자격과 계약 범위를 확인하고 결과보고서를 준비해야 합니다.</div><div class="go">56번 자격·업무범위 확인 → 57번 제안서 → 58번 계약서 → 59번 결과보고 → 60번 고객사 후속관리 순서로 활용하세요.</div></div>
+<div class="p safety" data-c="safety-business" data-k="안전관리전문기관 산업안전지도사 지정 등록 자격 컨설팅">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">56. 안전 전문기관·지도사 업무범위 검토</div><div class="desc">지정·등록·인력·장비 요건부터 확인</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1088,7 +1106,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-business" data-k="안전컨설팅 제안서 과업내용서 견적 산출물">
+<div class="p safety" data-c="safety-business" data-k="안전컨설팅 제안서 과업내용서 견적 산출물">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">57. 안전 컨설팅 제안서·과업범위 작성</div><div class="desc">고객 요구를 수행 항목과 산출물로</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1103,7 +1121,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-business" data-k="위탁계약 안전관리 대행 컨설팅 손해배상 검수">
+<div class="p safety" data-c="safety-business" data-k="위탁계약 안전관리 대행 컨설팅 손해배상 검수">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">58. 안전관리 위탁·컨설팅 계약 검토</div><div class="desc">역할·자료제공·검수·책임 경계 정리</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1118,7 +1136,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-business" data-k="점검보고서 개선요청서 사진 증빙 현장진단">
+<div class="p safety" data-c="safety-business" data-k="점검보고서 개선요청서 사진 증빙 현장진단">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">59. 현장 점검 결과보고서·개선요청서</div><div class="desc">관찰 증빙을 법적 근거와 연결</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
@@ -1133,7 +1151,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 법적 의무와 권고·계약사항을 구분하고, 조회 불가·정보 부족은 [확인 필요]로 남기세요.
 제공한 문구·수치·명칭은 임의로 바꾸지 말고 개인정보·영업비밀은 비식별 처리하세요.</pre>
 </div>
-<div class="p" data-c="safety-business" data-k="법령개정 고객사 월간보고 이행관리 후속점검">
+<div class="p safety" data-c="safety-business" data-k="법령개정 고객사 월간보고 이행관리 후속점검">
 <button class="copy">복사</button>
 <div class="hd"><div class="ttl">60. 고객사 법령 개정 영향·후속관리 보고</div><div class="desc">개정 내용과 실제 조치의 연결</div></div>
 <pre>저는 [안전관리 업무 담당자 / 산업안전기업 실무자]입니다.
